@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.project.ProjectDetailFragment">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/details_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back" />
+
+            <ImageView
+                android:id="@+id/details_iv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="end"
+                android:layout_marginEnd="24dp" />
+        </Toolbar>
+
+        <TextView
+            android:id="@+id/details_tv_name"
+            style="@style/TextAppearance.StudentAssistant.Title.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_time"
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="14dp"
+            android:textColor="@color/neutral90" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/neutral20" />
+
+        <TextView
+            android:id="@+id/details_tv_details"
+            style="@style/TextAppearance.StudentAssistant.Title.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="14dp"
+            android:text="@string/details"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_description"
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:text="@string/description"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_description_val"
+            style="@style/TextAppearance.StudentAssistant.Text.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            android:id="@+id/details_tv_author"
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:text="Автор"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_author_val"
+            style="@style/TextAppearance.StudentAssistant.Text.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            android:id="@+id/details_tv_count"
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:text="@string/number_of_students"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_count_val"
+            style="@style/TextAppearance.StudentAssistant.Text.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            android:id="@+id/details_tv_cur_count"
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:text="Текущее количество студентов"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_cur_count_val"
+            style="@style/TextAppearance.StudentAssistant.Text.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            android:id="@+id/details_tv_status"
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:text="Статус проекта"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_status_val"
+            style="@style/TextAppearance.StudentAssistant.Text.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:text="Статус набора"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_rec_status_val"
+            style="@style/TextAppearance.StudentAssistant.Text.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            android:id="@+id/details_tv_rec_date"
+            style="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="4dp"
+            android:text="Набор до"
+            android:textColor="@color/neutral90" />
+
+        <TextView
+            android:id="@+id/details_tv_rec_date_val"
+            style="@style/TextAppearance.StudentAssistant.Text.Neutral90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"  />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/details_tag_rv"
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/details_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:text="Подать заявку"
+            android:visibility="gone"
+            style="@style/Theme.StudentAssistant.SmallButton" />
+
+        <ProgressBar
+            android:id="@+id/details_pb"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>

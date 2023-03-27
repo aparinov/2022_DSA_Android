@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/project_nav_graph"
+    app:startDestination="@id/projectDetailFragment">
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.example.student_assistant.ui.project.ProjectDetailFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_projectDetailFragment_to_projectEditFragment"
+            app:destination="@id/projectEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectEditFragment"
+        android:name="com.example.student_assistant.ui.project.ProjectEditFragment"
+        android:label="ProjectEditFragment" >
+        <action
+            android:id="@+id/action_projectEditFragment_to_projectParameterFragment"
+            app:destination="@id/projectParameterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectParameterFragment"
+        android:name="com.example.student_assistant.ui.project.ProjectParameterFragment"
+        android:label="fragment_parameters"
+        tools:layout="@layout/fragment_parameters" >
+        <argument
+            android:name="page"
+            app:argType="integer" />
+    </fragment>
+</navigation>

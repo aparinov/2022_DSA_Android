@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.auth.RegistrationFragment">
+
+    <TextView
+        android:id="@+id/reg_tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.LargeTitle.Neutral90"
+        android:textColor="@color/neutral90" />
+
+    <EditText
+        android:id="@+id/reg_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_marginTop="64dp"
+        android:layout_marginHorizontal="24dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="22dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+    <EditText
+        android:id="@+id/reg_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фамилия"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="22dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="22dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+    <EditText
+        android:id="@+id/reg_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Код"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="128dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+    <Button
+        android:id="@+id/btn_Ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Готово"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="24dp"
+        style="@style/Theme.StudentAssistant.LargeButton" />
+
+</LinearLayout>

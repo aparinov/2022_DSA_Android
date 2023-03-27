@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        tools:context=".ui.project.ProjectEditFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_close_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:text="Название"
+            android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90" />
+
+        <EditText
+            android:id="@+id/project_edit_name"
+            style="@style/Theme.StudentAssistant.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:text="Описание"
+            android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90" />
+
+        <EditText
+            android:id="@+id/project_edit_desc"
+            style="@style/Theme.StudentAssistant.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:text="Дата начала"
+            android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90" />
+
+        <EditText
+            android:id="@+id/project_edit_from"
+            style="@style/TextAppearance.StudentAssistant.Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:inputType="date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:text="Дата окончания"
+            android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90" />
+
+        <EditText
+            android:id="@+id/project_edit_to"
+            style="@style/TextAppearance.StudentAssistant.Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:text="Дата окончания набора"
+            android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90" />
+
+        <EditText
+            android:id="@+id/project_edit_rec_to"
+            style="@style/TextAppearance.StudentAssistant.Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/project_edit_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:text="Количество участников"
+            android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90" />
+
+        <TextView
+            android:id="@+id/project_edit_tv_number_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.StudentAssistant.Text.Neutral90" />
+
+        <SeekBar
+            android:id="@+id/project_edit_number_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_rv" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/project_btn_delete"
+                style="@style/Theme.StudentAssistant.TransparentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="Удалить" />
+
+            <Button
+                android:id="@+id/project_btn_save"
+                style="@style/Theme.StudentAssistant.SmallButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="Сохранить" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

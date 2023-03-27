@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status_map">
+        <item>Создан</item>
+        <item>Завершен</item>
+        <item>Есть места</item>
+    </string-array>
+</resources>

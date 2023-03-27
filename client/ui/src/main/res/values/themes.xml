@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.StudentAssistant" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary100</item>
+        <item name="colorSecondary">@color/secondary100</item>
+        <item name="colorAccent">@color/primary60</item>
+        <item name="switchStyle">@style/Theme.StudentAssistant.Switch</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.TransparentButton">
+        <item name="android:background">@drawable/bg_transparent_button</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textColor">@color/neutral100</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.SmallButton">
+        <item name="android:background">@drawable/bg_button_8</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textColor">@color/neutral00</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.LargeButton">
+        <item name="android:background">@drawable/bg_button_12</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textColor">@color/neutral00</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.EditText">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textAppearance">@style/TextAppearance.StudentAssistant.Input</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.SmallBadge">
+        <item name="android:background">@drawable/bg_badge</item>
+        <item name="android:textAppearance">@style/TextAppearance.StudentAssistant.SmallBadge</item>
+        <item name="android:textColor">@color/primary100</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.Tab">
+        <item name="android:background">@drawable/bg_tab</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:textAppearance">@style/TextAppearance.StudentAssistant.Tab</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.SearchInput">
+        <item name="android:textAppearance">@style/TextAppearance.StudentAssistant.Input</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="track">@drawable/bg_switch</item>
+        <item name="thumbTint">@color/neutral00</item>
+    </style>
+
+    <style name="Theme.StudentAssistant.ImageButton">
+        <item name="android:background">@drawable/bg_imagebutton</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+    </style>
+</resources>

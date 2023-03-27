@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileEditFragment">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/profile_edit_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back" />
+    </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="12dp"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"/>
+
+    <EditText
+        android:id="@+id/profile_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/surname"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="24dp"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"/>
+
+    <EditText
+        android:id="@+id/profile_edit_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="24dp"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"/>
+
+    <EditText
+        android:id="@+id/profile_edit_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        style="@style/Theme.StudentAssistant.EditText" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_edit_rv"
+        android:layout_marginVertical="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/profile_edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Theme.StudentAssistant.TransparentButton"
+            android:layout_weight="1"
+            android:layout_margin="12dp"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/profile_edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Theme.StudentAssistant.SmallButton"
+            android:layout_weight="1"
+            android:layout_margin="12dp"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/profile_edit_pb"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>

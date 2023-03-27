@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="neutral100">#0E0E10</color>
+    <color name="neutral90">#272728</color>
+    <color name="neutral80">#3E3E40</color>
+    <color name="neutral70">#575758</color>
+    <color name="neutral60">#6E6E70</color>
+    <color name="neutral50">#868687</color>
+    <color name="neutral30">#B7B7B8</color>
+    <color name="neutral20">#CFCFCF</color>
+    <color name="neutral10">#E7E7E8</color>
+    <color name="neutral05">#F3F3F3</color>
+    <color name="neutral00">#FFFFFF</color>
+    <color name="primary140">#3E338F</color>
+    <color name="primary100">#614FE0</color>
+    <color name="primary60">#9A8EEB</color>
+    <color name="primary20">#D3CEF6</color>
+    <color name="primary10">#EFEDFC</color>
+    <color name="secondary100">#FF7C5A</color>
+    <color name="yellow100">#FFAF36</color>
+    <color name="green100">#41E8CA</color>
+    <color name="purple100">#D86AEA</color>
+    <color name="red100">#DF0707</color>
+</resources>

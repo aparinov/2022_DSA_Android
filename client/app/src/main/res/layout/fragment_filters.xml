@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.filter.FilterFragment">
+
+    <TextView
+        android:id="@+id/filters_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:text="@string/filters"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.Title.Neutral90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/filters_tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="@string/from"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filters_tv_title" />
+
+    <EditText
+        android:id="@+id/filters_et_from_value"
+        style="@style/TextAppearance.StudentAssistant.Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:inputType="date"
+        android:text="24.12.2022"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_from"
+        app:layout_constraintTop_toBottomOf="@id/filters_tv_from" />
+
+    <TextView
+        android:id="@+id/filters_tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:text="@string/to"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_from"
+        app:layout_constraintTop_toBottomOf="@id/filters_et_from_value" />
+
+    <EditText
+        android:id="@+id/filters_et_to_value"
+        style="@style/TextAppearance.StudentAssistant.Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:inputType="date"
+        android:text="15.01.2023"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_to"
+        app:layout_constraintTop_toBottomOf="@id/filters_tv_to" />
+
+    <TextView
+        android:id="@+id/filters_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:text="@string/number_of_students"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_from"
+        app:layout_constraintTop_toBottomOf="@id/filters_et_to_value" />
+
+    <SeekBar
+        android:id="@+id/filters_sb_count_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="18dp"
+        android:progress="24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_count"
+        app:layout_constraintTop_toBottomOf="@id/filters_tv_count" />
+
+    <View
+        android:id="@+id/filters_div"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="24dp"
+        android:background="@color/neutral20"
+        app:layout_constraintTop_toBottomOf="@id/filters_sb_count_value" />
+
+    <TextView
+        android:id="@+id/filters_tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:text="@string/project_status"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+        app:layout_constraintBottom_toTopOf="@id/filters_tv_status_view_all"
+        app:layout_constraintStart_toStartOf="@id/filters_sb_count_value"
+        app:layout_constraintTop_toBottomOf="@id/filters_div" />
+
+    <TextView
+        android:id="@+id/filters_tv_status_view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallText"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_status"
+        app:layout_constraintTop_toBottomOf="@id/filters_tv_status" />
+
+    <ImageView
+        android:id="@+id/filters_iv_status_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/filters_tv_status_view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/filters_tv_status" />
+
+    <TextView
+        android:id="@+id/filters_tv_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:text="@string/tags"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallTitle.Neutral90"
+        app:layout_constraintBottom_toTopOf="@id/filters_tv_tags_view_all"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_status_view_all"
+        app:layout_constraintTop_toBottomOf="@id/filters_tv_status_view_all" />
+
+    <TextView
+        android:id="@+id/filters_tv_tags_view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all"
+        android:textAppearance="@style/TextAppearance.StudentAssistant.SmallText"
+        app:layout_constraintStart_toStartOf="@id/filters_tv_tags"
+        app:layout_constraintTop_toBottomOf="@id/filters_tv_tags" />
+
+    <ImageView
+        android:id="@+id/filters_iv_tags_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/filters_tv_tags_view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/filters_tv_tags" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
